@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Level 2 - Advanced Concepts">
+    <link rel="stylesheet" href="hlevel123.css">
+    <script src="hlevel2.js" defer></script>
+    <title>Level 2</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Learning - Level 2</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <h2 class="level-title">Level 2 - Advanced HTML</h2>
+
+    <div class="questions-container">
+        <!-- Question 1 -->
+        <div class="question" data-correct="table">
+            <h2>1. Which HTML tag is used to create a table?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="table"> &lt;table&gt;</label>
+                <label><input type="radio" name="q1" value="tbody"> &lt;tbody&gt;</label>
+                <label><input type="radio" name="q1" value="tr"> &lt;tr&gt;</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This tag is used to define the entire table structure in HTML.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" data-correct="form-method">
+            <h2>2. What attribute is used to specify the HTTP method used when submitting a form?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This attribute specifies whether the form sends data using GET or POST method.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" data-correct="section">
+            <h2>3. Which HTML5 tag is used to define a section of content within a webpage?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="section"> &lt;section&gt;</label>
+                <label><input type="radio" name="q3" value="article"> &lt;article&gt;</label>
+                <label><input type="radio" name="q3" value="div"> &lt;div&gt;</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This tag is used to group content into logical sections of a document.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question" data-correct="meta">
+            <h2>4. Which HTML tag is used to define metadata about a webpage (like description, keywords)?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This tag is placed inside the &lt;head&gt; tag and provides meta-information about the document.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question" data-correct="audio">
+            <h2>5. Which HTML tag is used to embed audio content?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="audio"> &lt;audio&gt;</label>
+                <label><input type="radio" name="q5" value="video"> &lt;video&gt;</label>
+                <label><input type="radio" name="q5" value="sound"> &lt;sound&gt;</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This tag is used to embed audio files in the web page and can include controls like play/pause.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </div>
+
+    <!-- Level 3 Button -->
+    <div id="next-level-section" style="display: none; margin-top: 30px; text-align: center;">
+        <button id="next-level-btn" style="padding: 15px 30px; font-size: 1.2em; margin-bottom: 50px;">Go to Level 3</button>
+    </div>
+</body>
+</html>

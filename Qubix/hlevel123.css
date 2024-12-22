@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #1c1c1c; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+/* Header Styles */
+header {
+    padding: 20px;
+    background: #2a2a2a; /* Darker background for header */
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #ff66b2; /* Pink text */
+}
+
+/* Level Title */
+.level-title {
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #ff66b2; /* Pink text */
+    text-align: center;
+}
+
+/* Questions Container */
+.questions-container {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+/* Single Question */
+.question {
+    position: relative;
+    background: #2e2e2e; /* Darker question background */
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.question h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+/* Answer Input Styles */
+.answer-input {
+    margin-top: 10px;
+    padding: 8px;
+    width: calc(100% - 16px);
+    border: 1px solid #ff66b2; /* Pink border */
+    border-radius: 5px;
+    font-size: 1em;
+    background: #1c1c1c; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+}
+
+/* Exclamation Icon */
+.tip-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: #ff66b2; /* Pink background */
+    color: #1c1c1c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tip-box {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    background: #333; /* Dark background for tooltip */
+    color: #ff66b2; /* Pink text */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    font-size: 0.9em;
+    width: 200px;
+    z-index: 10;
+}
+
+/* Button Styles */
+.check-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff66b2; /* Pink background */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.check-btn:hover {
+    background: #e6007d; /* Darker pink on hover */
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    display: none;
+}
+
+.feedback.correct {
+    color: green;
+}
+
+.feedback.wrong {
+    color: red;
+}
+
+/* Next Level Button */
+#next-level-section {
+    margin-bottom: 50px;
+}
+
+#next-level-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff66b2; /* Pink background */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#next-level-btn:hover {
+    background-color: #e6007d; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+/* Back Button Styles */
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4d94; /* Soft pink background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.back-btn:hover {
+    background-color: #e6007d; /* Darker pink on hover */
+}
+
+/* Completed Feedback */
+.completed {
+    background-color: green;
+    color: white;
+}

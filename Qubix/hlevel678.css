@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    min-height: 100vh;
+    padding-top: 80px; /* To avoid being blocked by fixed header */
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e1e;
+    border-bottom: 2px solid #F8B0D7; /* Pink border for the header */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure header is above the content */
+}
+
+h1 {
+    color: #F8B0D7; /* Warm pink for title */
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Content Container Styles */
+.content-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 100px auto 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Level Title */
+.level-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #F8B0D7; /* Warm pink */
+}
+
+.questions-container {
+    margin-top: 20px;
+}
+
+/* Question Styles */
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #F8B0D7; /* Pink border */
+    border-radius: 10px;
+    background-color: #2a2a2a;
+}
+
+/* Answer Input Styles */
+.answer-input {
+    width: 98%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #F8B0D7; /* Pink border */
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Tip Styles */
+.tip-icon-container {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #F8B0D7; /* Pink border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tip-icon {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #F8B0D7; /* Pink icon */
+}
+
+.tip-box {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border: 1px dashed #F8B0D7; /* Pink dashed border */
+    border-radius: 5px;
+    color: #F8B0D7; /* Pink text */
+}
+
+/* Show tip on hover */
+.tip-icon-container:hover + .tip-box {
+    display: block;
+}
+
+/* Answer Box Styles */
+.answer-box {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px dashed #F8B0D7; /* Pink dashed border */
+    border-radius: 5px;
+    background-color: rgba(248, 176, 215, 0.1); /* Light pink background */
+    cursor: pointer;
+    position: relative;
+}
+
+.hidden-answer {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2a2a2a;
+    border: 1px solid #F8B0D7; /* Pink border */
+    border-radius: 5px;
+    padding: 10px;
+    color: #F8B0D7; /* Pink text */
+    white-space: pre-wrap;
+}
+
+.answer-box:hover .hidden-answer {
+    display: block;
+}
+
+/* Next Level Button */
+#next-level-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#next-level-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #F8B0D7; /* Pink background */
+    color: #121212;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-level-btn:hover {
+    background-color: #F3A6C0; /* Light pink on hover */
+}
+
+/* Back Button Styles */
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4d94; /* Soft pink background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.back-btn:hover {
+    background-color: #e6007d; /* Darker pink on hover */
+}
+
+/* Completed Feedback */
+.completed {
+    background-color: green;
+    color: white;
+}
+

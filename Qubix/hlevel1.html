@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hlevel123.css">
+    <script src="hlevel1.js" defer></script>
+    <title>Level 1</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Learning - Level 1</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <h2 class="level-title">Level 1 - HTML Basics</h2>
+
+    <div class="questions-container">
+        <!-- Question 1 -->
+        <div class="question" data-correct="img">
+            <h2>1. Which HTML tag is used to display images?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="img"> &lt;img&gt;</label>
+                <label><input type="radio" name="q1" value="image"> &lt;image&gt;</label>
+                <label><input type="radio" name="q1" value="picture"> &lt;picture&gt;</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This tag is used to embed images in an HTML document.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" data-correct="href">
+            <h2>2. Which attribute is used to define the destination of a link in HTML?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This attribute specifies the URL to which the link points.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" data-correct="ul">
+            <h2>3. Which HTML tag is used to create an unordered list?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="ul"> &lt;ul&gt;</label>
+                <label><input type="radio" name="q3" value="ol"> &lt;ol&gt;</label>
+                <label><input type="radio" name="q3" value="li"> &lt;li&gt;</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This tag creates a list without numbers, typically using bullet points.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question" data-correct="title">
+            <h2>4. Which HTML tag is used to define the title of a webpage?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                The title tag appears in the browser tab and defines the page's name.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question" data-correct="form">
+            <h2>5. Which HTML tag is used to create a form?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="form"> &lt;form&gt;</label>
+                <label><input type="radio" name="q5" value="input"> &lt;input&gt;</label>
+                <label><input type="radio" name="q5" value="button"> &lt;button&gt;</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This tag is used to collect user input through various input elements.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </div>
+
+    <!-- Level 2 Button -->
+    <div id="next-level-section" style="display: none; margin-top: 30px; text-align: center;">
+        <button id="next-level-btn" style="padding: 15px 30px; font-size: 1.2em; margin-bottom: 50px;">Go to Level 2</button>
+    </div>
+</body>
+</html>

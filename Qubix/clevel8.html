@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clevel678.css">
+    <script src="clevel8.js" defer></script>
+    <title>Level 8</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Learning - Level 8</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <main class="content-container">
+        <h2 class="level-title">Level 8 - Advanced CSS Concepts</h2>
+
+        <div class="questions-container">
+            <!-- Question 1 -->
+            <div class="question" data-correct=".container { display: grid; grid-template-columns: 1fr 1fr; }">
+                <h2>1. Write a CSS rule to create a two-column grid layout.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `display: grid` and `grid-template-columns`.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">.container { display: grid; grid-template-columns: 1fr 1fr; }</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question" data-correct=".box { transition: all 0.3s ease-in-out; }">
+                <h2>2. Write a CSS rule to add a smooth transition effect to an element.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use the `transition` property with timing and duration.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">.box { transition: all 0.3s ease-in-out; }</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question" data-correct=".text { font-size: clamp(1rem, 2.5vw, 2rem); }">
+                <h2>3. Write a CSS rule to make the font size responsive using `clamp`.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `clamp()` with minimum, preferred, and maximum values.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">.text { font-size: clamp(1rem, 2.5vw, 2rem); }</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question" data-correct=".flex-container { display: flex; justify-content: center; align-items: center; }">
+                <h2>4. Write a CSS rule to center content using Flexbox.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `display: flex` with alignment properties.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">.flex-container { display: flex; justify-content: center; align-items: center; }</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question" data-correct="@keyframes slide-in { from { transform: translateX(-100%); } to { transform: translateX(0); } }">
+                <h2>5. Write a CSS `@keyframes` animation to slide an element in from the left.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Define keyframes with `transform: translateX`.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">@keyframes slide-in { from { transform: translateX(-100%); } to { transform: translateX(0); } }</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </div>
+
+        <div id="next-level-section">
+            <button id="next-level-btn">Finish</button>
+        </div>
+    </main>
+</body>
+</html>

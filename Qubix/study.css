@@ -1,0 +1,136 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #0d1117;
+    color: #00ffea;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+    color: #00ffea;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00c9b7;
+}
+
+h2 {
+    color: #00c9b7;
+    margin-bottom: 20px;
+}
+
+/* 进度条 */
+.progress-container {
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 50%;
+    background: linear-gradient(to right, #00ffea, #00c9b7);
+    box-shadow: 0 0 10px #00ffea;
+    transition: width 0.5s ease-in-out;
+}
+
+/* 卡片容器 */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* 卡片通用样式 */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    color: #ffffff;
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px #ffffff);
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* 卡片颜色 */
+.card:nth-child(1) { /* Python */
+    background: linear-gradient(135deg, #2b2d42, #08d9d6);
+}
+
+.card:nth-child(2) { /* HTML */
+    background: linear-gradient(135deg, #2b2d42, #ff2e63);
+}
+
+.card:nth-child(3) { /* CSS */
+    background: linear-gradient(135deg, #2b2d42, #f8b400);
+}
+
+/* 选中效果 */
+.card.selected {
+    transform: scale(1.2);
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* 开始按钮 */
+.start-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #00ffea, #00c9b7);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #00ffea;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ffea, 0 0 25px #00c9b7;
+}
+
+/* 返回按钮样式 */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2em;
+    color: #00ffea;
+    text-decoration: none;
+    background: rgba(0, 255, 234, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #00ffea;
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.8);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exciting Quiz Game</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div id="start-page">
+    <h1>Welcome to the Ultimate Quiz Challenge!</h1>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <div id="quiz-container" style="display: none;">
+    <div id="question-container">
+      <div id="question-number"></div>
+      <div id="question-text"></div>
+    </div>
+    <div id="options-container"></div>
+    <div id="timer-container">
+      <div id="timer-text">10s</div>
+    </div>
+  </div>
+
+  <!-- Finish 按钮，初始隐藏 -->
+  <button id="finishButton" style="display: none;">Finish</button>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

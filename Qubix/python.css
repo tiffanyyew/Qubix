@@ -1,0 +1,175 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #121212; /* 深黑色背景 */
+    color: #EAEAEA; /* 浅灰色文字 */
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background: #1F1F1F; /* 深灰色背景 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #5E8EDE; /* 冷蓝色 */
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #7CA0D3; /* 更浅的蓝色 */
+}
+
+/* 关卡容器 */
+.levels-container {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    background: #1F1F1F; /* 深灰色背景 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.levels-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #5E8EDE; /* 冷蓝色 */
+}
+
+.levels-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.level-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(94, 142, 222, 0.1); /* 淡蓝色背景 */
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.level-item.completed {
+    background: rgba(94, 142, 222, 0.2); /* 完成的项目背景 */
+}
+
+.level-item.in-progress {
+    background: rgba(94, 142, 222, 0.15); /* 进行中的项目背景 */
+}
+
+.level-item button {
+    padding: 8px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #5E8EDE; /* 蓝色按钮 */
+    color: #121212; /* 深色文字 */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.level-item button:hover {
+    background: #7CA0D3; /* 悬停效果为亮蓝色 */
+}
+
+/* 开始按钮 */
+.start-section {
+    margin-top: 30px;
+}
+
+#start-button {
+    padding: 10px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #121212;
+    background: #5E8EDE; /* 蓝色 */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#start-button:hover {
+    background: #7CA0D3; /* 悬停效果为亮蓝色 */
+    transform: scale(1.1);
+}
+
+/* Style the Back button */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #2C2A1D; /* 深色背景 */
+    color: #EAEAEA; /* 浅灰色文字 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #5E8EDE; /* 悬停效果为蓝色 */
+}
+
+/* Additional styles for levels 6-8 */
+.level-container {
+    margin-top: 20px;
+}
+
+.code-input {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    background-color: #121212; /* 深黑背景 */
+    border: 1px solid #5E8EDE; /* 蓝色边框 */
+    color: #EAEAEA; /* 浅灰色文字 */
+    font-family: monospace;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.tip-box {
+    background-color: #2C2A1D; /* 深灰背景 */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #7CA0D3; /* 浅蓝色文字 */
+}
+
+.check-btn {
+    background-color: #5E8EDE; /* 蓝色按钮 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check-btn:hover {
+    background-color: #7CA0D3; /* 悬停效果为亮蓝色 */
+}
+
+.feedback {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.correct {
+    color: #00FF00; /* 浅绿色 */
+}
+
+.wrong {
+    color: #FF6347; /* 番茄红 */
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clevel123.css">
+    <script src="clevel1.js" defer></script>
+    <title>Level 1</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Learning - Level 1</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <h2 class="level-title">Level 1 - CSS Basics</h2>
+
+    <div class="questions-container">
+        <!-- Question 1 -->
+        <div class="question" data-correct="style">
+            <h2>1. What HTML attribute is used to apply inline CSS?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="class"> class</label>
+                <label><input type="radio" name="q1" value="id"> id</label>
+                <label><input type="radio" name="q1" value="style"> style</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This attribute is used to define inline styles for an element.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" data-correct="color">
+            <h2>2. What CSS property is used to change the text color?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This property changes the color of text in an element.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" data-correct="px">
+            <h2>3. What unit is commonly used for defining font sizes in CSS?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="px"> px</label>
+                <label><input type="radio" name="q3" value="%"> %</label>
+                <label><input type="radio" name="q3" value="inch"> inch</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This unit stands for "pixels" and is widely used in web design.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question" data-correct="background-color">
+            <h2>4. What CSS property is used to change the background color of an element?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                Use this property to set or change the background color.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question" data-correct="margin">
+            <h2>5. What CSS property adds space outside the border of an element?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="margin"> margin</label>
+                <label><input type="radio" name="q5" value="padding"> padding</label>
+                <label><input type="radio" name="q5" value="border"> border</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This property creates space around the outside of an element's border.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+    </div>
+
+    <!-- Level 2 Button -->
+    <div id="next-level-section" style="display: none; margin-top: 30px; text-align: center;">
+        <button id="next-level-btn" style="padding: 15px 30px; font-size: 1.2em; margin-bottom: 50px;">Go to Level 2</button>
+    </div>
+</body>
+</html>

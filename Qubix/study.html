@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Mode</title>
+    <link rel="stylesheet" href="study.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 返回按钮 -->
+    <a href="index.html" class="back-btn">← Back</a>
+
+    <!-- 页面标题 -->
+    <h1>Study Mode</h1>
+    <h2>Choose Your Coding Path</h2>
+
+    <!-- 学习进度条 -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- 学习模块卡片 -->
+    <div class="card-container">
+        <div class="card" data-path="python.html" onclick="selectCard(this)">
+            <img src="https://img.icons8.com/ios-filled/100/00ffea/python.png" alt="Python">
+            <div class="card-title">Python</div>
+            <p>Learn the basics of Python programming.</p>
+        </div>
+
+        <div class="card" data-path="html.html" onclick="selectCard(this)">
+            <img src="https://img.icons8.com/ios-filled/100/00ffea/html-5.png" alt="HTML">
+            <div class="card-title">HTML</div>
+            <p>Master web development with HTML.</p>
+        </div>
+
+        <div class="card" data-path="css.html" onclick="selectCard(this)">
+            <img src="https://img.icons8.com/ios-filled/100/00ffea/css3.png" alt="CSS">
+            <div class="card-title">CSS</div>
+            <p>Design beautiful websites using CSS.</p>
+        </div>
+    </div>
+
+    <!-- 开始按钮 -->
+    <button class="start-btn" onclick="startLearning()">Start Learning</button>
+
+    <!-- JavaScript -->
+    <script src="study.js"></script>
+</body>
+</html>

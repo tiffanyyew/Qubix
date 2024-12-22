@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clevel123.css">
+    <script src="clevel2.js" defer></script>
+    <title>Level 2</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Learning - Level 2</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <h2 class="level-title">Level 2 - Advanced CSS</h2>
+
+    <div class="questions-container">
+        <!-- Question 1 -->
+        <div class="question" data-correct="flexbox">
+            <h2>1. What CSS layout model is used to create a flexible and responsive layout?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="grid"> Grid</label>
+                <label><input type="radio" name="q1" value="flexbox"> Flexbox</label>
+                <label><input type="radio" name="q1" value="float"> Float</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This layout model is used to distribute space within a container, even when the size of its items is dynamic.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" data-correct="z-index">
+            <h2>2. What CSS property controls the stacking order of elements?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This property is particularly useful when working with overlapping elements.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" data-correct="hover">
+            <h2>3. What is the CSS pseudo-class for styling an element when a user hovers over it?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="focus"> focus</label>
+                <label><input type="radio" name="q3" value="hover"> hover</label>
+                <label><input type="radio" name="q3" value="active"> active</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This pseudo-class is applied when the user moves their cursor over an element.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question" data-correct="rgba">
+            <h2>4. What color model allows specifying transparency in CSS?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This model includes red, green, blue, and an alpha channel for transparency.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question" data-correct="absolute">
+            <h2>5. What CSS position value positions an element relative to its nearest positioned ancestor?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="static"> static</label>
+                <label><input type="radio" name="q5" value="absolute"> absolute</label>
+                <label><input type="radio" name="q5" value="fixed"> fixed</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This position value removes the element from the document flow and positions it relative to a specific ancestor.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+
+    <!-- Level 3 Button -->
+    <div id="next-level-section" style="display: none; margin-top: 30px; text-align: center;">
+        <button id="next-level-btn" style="padding: 15px 30px; font-size: 1.2em; margin-bottom: 50px;">Go to Level 3</button>
+    </div>
+</body>
+</html>

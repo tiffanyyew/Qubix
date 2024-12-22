@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Code</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <div class="upload-container">
+        <!-- Back Button -->
+        <div class="back-button">
+            <a href="challenge.html">&larr; Back</a>
+        </div>
+
+        <h1>Upload Your Code</h1>
+        <p>Share your project with the community by filling out the form below.</p>
+        <form id="uploadForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <label for="projectTitle">Project Title:</label>
+            <input type="text" id="projectTitle" placeholder="Enter project title" required>
+
+            <label for="codeSnippet">Code Snippet:</label>
+            <textarea id="codeSnippet" placeholder="Paste your HTML, CSS, or JS code here" required></textarea>
+
+            <button type="submit">Upload</button>
+        </form>
+        <div id="successMessage" class="hidden">
+            <p>🎉 Your code has been successfully uploaded!</p>
+            <button onclick="resetForm()">Upload Another</button>
+        </div>
+    </div>
+
+    <script src="upload.js"></script>
+</body>
+</html>

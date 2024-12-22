@@ -1,0 +1,81 @@
+/* 页面背景 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010; /* 暗色系背景 */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 弹窗样式 */
+#avatar-popup {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.3);
+    width: 400px;
+}
+
+/* 标题样式 */
+#avatar-popup h2 {
+    color: #00ffea;
+    margin-bottom: 15px;
+}
+
+/* 头像容器样式 */
+#avatar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* 头像样式 */
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, border 0.2s;
+    border: 3px solid transparent;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+    border: 3px solid #00ffea;
+}
+
+.avatar.selected {
+    border: 3px solid #ffcc00;
+}
+
+/* 输入框样式 */
+#username {
+    margin-top: 15px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 按钮样式 */
+#next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #00ffea;
+    color: #1a1a1a;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #ffcc00;
+}

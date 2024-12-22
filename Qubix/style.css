@@ -1,0 +1,225 @@
+/* 设置canvas为绝对定位并确保它覆盖整个页面 */
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 让代码雨背景在所有内容之下 */
+}
+
+body {
+    background-color: black;
+    color: #e0e0e0; /* 默认文本颜色 */
+}
+
+.game-pin-input,
+.game-pin-btn {
+    border-color: #7c86B5;
+    color: #7c86B5;
+}
+
+.game-pin-btn:hover {
+    border-color: #b2d6cd;
+    background-color: #7c86B5;
+    color: #ffffff;
+}
+
+/* 页面标题部分居中 */
+/* 页面标题部分居中 */
+.terminal-header {
+    text-align: center;
+    margin-top: 10%;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.terminal-header h1 {
+    font-size: 80px ;
+    font-weight: 700;
+    color: #ffffff; /* 纯白色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 轻微的黑色阴影 */
+}
+
+.terminal-header .highlight {
+    color: #ffffff; /* 保持白色 */
+    font-size: 65px;
+    font-weight: 700;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px #ffcc00; /* 金色描边效果 */
+}
+
+.sub-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #e0e0e0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+
+/* 输入框部分居中 */
+.game-pin-section {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.game-pin-input {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border: 2px solid #00ffea;
+    background-color: transparent;
+    color: #00ffea;
+}
+
+.game-pin-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #00ffea;
+    background-color: transparent;
+    color: #00ffea;
+    cursor: pointer;
+}
+
+.btn-create-btn{
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #00ffea;
+    background-color: transparent;
+    color: #00ffea;
+    cursor: pointer;
+}
+
+/* 动画选项卡 */
+.options-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.option-card {
+    margin: 0 20px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #00ffea;
+    background-color: transparent;
+    position: relative; /* 保证解释部分的位置 */
+    transition: transform 0.2s ease-in-out; /* 动画效果 */
+    width: 300px; /* 横向长方形 */
+    height: 120px; /* 固定高度，确保选项框大小一致 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 选项标题样式 */
+.option-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: transparent;
+    background-image: linear-gradient(90deg, #00ffea, #ff9900);
+    background-clip: text;
+    -webkit-background-clip: text; /* Safari 兼容 */
+    transition: all 0.3s ease-in-out;
+}
+/* 选项描述样式 */
+.option-desc {
+    font-size: 16px;
+    color: white;
+    display: none; /* 初始状态隐藏解释 */
+    margin-top: 10px;
+}
+
+/* 鼠标悬浮时的动画效果 */
+.option-card:hover .option-title {
+    transform: translateY(-5px);
+    background-image: linear-gradient(90deg, #ff9900, #00ffea);
+}
+
+.option-card:hover .option-desc {
+    display: block;
+}
+
+.option-card:hover {
+    transform: scale(1.05); /* 鼠标悬停时轻微放大 */
+}
+
+/* 鼠标悬浮时解释显示 */
+.option-card:hover .option-desc {
+    display: block;
+}
+.terminal-header h1 {
+    font-size: 48px;
+    color: #7c86B5; /* 设置为新主色 */
+    text-shadow: 2px 2px 4px #ffffff; /* 提升清晰度 */
+    transition: color 0.3s ease-in-out;
+}
+
+.terminal-header h1:hover {
+    color: #ffffff; /* 鼠标悬浮时变浅 */
+    text-shadow: 3px 3px 6px #7c86B5; /* 呼应主色 */
+}
+
+.option-card {
+    background-color: rgba(0, 0, 0, 0.6); /* 深色背景，适配代码雨 */
+    border: 2px solid #7c86B5; /* 边框颜色 */
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-card:hover {
+    transform: scale(1.05); /* 鼠标悬浮时放大 */
+    background-color: #7c86B5; /* 鼠标悬浮时背景变亮 */
+}
+
+.option-desc {
+    opacity: 0;
+    margin-top: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.option-card:hover .option-desc {
+    opacity: 1; /* 鼠标悬浮时文字逐渐显现 */
+}
+
+.study-card .option-title {
+    color: #0ae8ff; /* 明亮的青色，清晰且醒目 */
+}
+
+.challenge-card .option-title {
+    color: #f54242; /* 明亮的红色，形成强烈对比 */
+}
+
+.option-card:hover .option-title {
+    color: #ffffff; /* 鼠标悬浮时改为白色，进一步突出 */
+}
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.avatar-selection .avatar.selected {
+    border: 3px solid #00ffea;
+}
+
+.quiz-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+

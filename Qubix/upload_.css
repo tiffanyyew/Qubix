@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #1c1c1c, #343434);
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(31, 31, 31, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #4CAF50;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.upload-form {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+input[type="file"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.back-btn {
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+}
+
+.back-btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 40px;
+    color: #4CAF50;
+    margin-left: 60px; /* Ensure it aligns nicely even with the button */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+

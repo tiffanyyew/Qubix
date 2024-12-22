@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="python123.css">
+    <script src="level4.js" defer></script>
+    <title>Level 4</title>
+</head>
+<body>
+    <header>
+        <h1>Python Learning - Level 4</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <h2 class="level-title">Level 4 - File Operations and Error Handling</h2>
+
+    <div class="questions-container">
+        <!-- Question 1 -->
+        <div class="question" data-correct="open">
+            <h2>1. What function is used to open a file in Python?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                Hint: This function can be used with "r" (read) or "w" (write) modes.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" data-correct="try">
+            <h2>2. Which keyword starts a block for error handling?</h2>
+            <div class="options">
+                <label><input type="radio" name="q2" value="try"> try</label>
+                <label><input type="radio" name="q2" value="except"> except</label>
+                <label><input type="radio" name="q2" value="catch"> catch</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                Hint: This keyword ensures safe execution when an exception occurs.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" data-correct="close">
+            <h2>3. After reading a file, what method is used to close it?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                Hint: Closing files ensures resources are freed properly.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+<!-- 第4题和第5题替换后的Level 4 -->
+<div class="question" data-correct="x = 10">
+    <h2>4. How do you correctly assign a value of 10 to a variable in Python?</h2>
+    <div class="options">
+        <label><input type="radio" name="q4" value="var x = 10"> var x = 10</label>
+        <label><input type="radio" name="q4" value="x: 10"> x: 10</label>
+        <label><input type="radio" name="q4" value="x = 10"> x = 10</label>
+    </div>
+    <button class="check-btn">Check Answer</button>
+    <div class="feedback"></div>
+</div>
+
+<div class="question" data-correct="int">
+    <h2>5. What is the type of the variable after this statement: <code>x = 5</code>?</h2>
+    <div class="options">
+        <label><input type="radio" name="q5" value="string"> string</label>
+        <label><input type="radio" name="q5" value="int"> int</label>
+        <label><input type="radio" name="q5" value="float"> float</label>
+    </div>
+    <button class="check-btn">Check Answer</button>
+    <div class="feedback"></div>
+</div>
+
+        </div>
+    </div>
+
+    <!-- Section for Next Level -->
+    <div id="next-level-section" style="display: none; margin-top: 30px; text-align: center;">
+        <button id="next-level-btn" style="padding: 15px 30px; font-size: 1.2em; margin-bottom: 50px;">Go to Level 5</button>
+    </div>
+</body>
+</html>

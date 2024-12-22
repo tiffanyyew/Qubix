@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Leaderboard</title>
+    <style>
+        /* 全局样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #0F2027, #203A43, #2C5364); /* 暗色系渐变背景 */
+            color: #EEE;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #FFF;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+            margin-bottom: 25px;
+            animation: bounce 1.8s infinite alternate, glow 1.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #ff5733, 0 0 20px #ff5733;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff5733, 0 0 30px #ff5733;
+            }
+        }
+
+        /* 排行榜容器 */
+        .leaderboard {
+            background: #14252C;
+            border-radius: 15px;
+            padding: 25px;
+            width: 90%;
+            max-width: 520px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            border-bottom: none;
+            box-shadow: none;
+            margin-bottom: 50px;
+        }
+
+        .leaderboard h2 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: #EEE;
+        }
+
+        /* 奖台样式 */
+        .podium {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin-bottom: 25px;
+        }
+
+        .position {
+            text-align: center;
+            position: relative;
+        }
+
+        .position img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 4px solid #2C5364;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .position .name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 12px 0;
+            color: #DDD;
+        }
+
+        .position p {
+            font-size: 1rem;
+            color: #AAA;
+        }
+
+        /* 1st, 2nd, 3rd place styling */
+        .position.first {
+            border: 5px solid gold;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        }
+
+        .position.second {
+            border: 5px solid silver;
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
+        }
+
+        .position.third {
+            border: 5px solid #cd7f32;
+            box-shadow: 0 0 20px rgba(205, 127, 50, 0.8);
+        }
+
+        /* Crown Icon for First Place */
+        .position.first::before {
+            content: '👑';
+            font-size: 2.5rem;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* 排行榜列表 */
+        .ranking-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ranking-list li {
+            background: #2C5364;
+            padding: 12px;
+            margin: 6px 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+            transition: transform 0.25s;
+            animation: slideIn 0.6s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .ranking-list li:hover {
+            transform: scale(1.08);
+        }
+
+        /* 按钮样式 */
+        button {
+            background: #0F2027;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 25px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: -30px;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #14252C, #2C5364);
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Loading Animation */
+        .loading {
+            font-size: 1.5rem;
+            color: #EEE;
+            text-align: center;
+            margin-top: 50px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="background" style="position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
+    <h1>Quiz Champions!</h1>
+    <div class="leaderboard">
+        <h2>Leaderboard</h2>
+        <div class="podium">
+            <div class="position second">
+                <img src="ic2.png" alt="Silver Medal">
+                <div class="name">Taylor 🥈</div>
+                <p>8/10 Correct</p>
+            </div>
+            <div class="position first">
+                <img src="ic1.png" alt="Gold Medal">
+                <div class="name">Alex 🥇</div>
+                <p>9/10 Correct</p>
+            </div>
+            <div class="position third">
+                <img src="ic3.png" alt="Bronze Medal">
+                <div class="name">Chris 🥉</div>
+                <p>7/10 Correct</p>
+            </div>
+        </div>
+        <ul class="ranking-list">
+            <div class="loading">Loading Leaderboard...</div>
+        </ul>
+    </div>
+    <button onclick="window.location.href='index.html'">Finish</button>
+
+    <audio id="cheer-sound" src="cheer.mp3" preload="auto"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+        particlesJS("background", {
+            particles: {
+                number: { value: 100 },
+                size: { value: 3 },
+                move: { speed: 2 },
+                color: { value: "#ffffff" }
+            },
+            interactivity: {
+                events: { onhover: { enable: true, mode: "repulse" } }
+            }
+        });
+
+        // 假设排行榜数据
+        let leaderboard = [
+            { name: 'Alex', score: 9 },
+            { name: 'Taylor', score: 8 },
+            { name: 'Chris', score: 7 },
+            { name: 'Jordan', score: 6 },
+            { name: 'Jamie', score: 5 },
+            { name: 'Sam', score: 5 },
+            { name: 'Morgan', score: 4 },
+            { name: 'Casey', score: 3 },
+        ];
+
+        // 获取用户的名字和分数
+        const userName = localStorage.getItem('userName') || 'You';
+        const userScore = parseInt(localStorage.getItem('userScore'));
+
+        // 将用户的分数添加到排行榜中
+        leaderboard.push({ name: userName, score: userScore });
+
+        // 根据分数排序排行榜
+        leaderboard.sort((a, b) => b.score - a.score);
+
+        // 显示排行榜
+        const leaderboardContainer = document.querySelector('.ranking-list');
+        leaderboardContainer.innerHTML = '';
+        leaderboard.forEach((player, index) => {
+            const li = document.createElement('li');
+            li.innerHTML = `<span>${index + 1}. ${player.name}</span> <span>${player.score}/10 Correct</span>`;
+            leaderboardContainer.appendChild(li);
+        });
+
+        // 播放音效
+        const audio = document.getElementById('cheer-sound');
+        window.addEventListener('load', () => audio.play());
+
+        // 如果用户在前三名，给他加上排名图标
+        const positions = document.querySelectorAll('.position');
+        leaderboard.slice(0, 3).forEach((player, index) => {
+            positions[index].querySelector('.name').textContent = player.name;
+            positions[index].querySelector('p').textContent = `${player.score}/10 Correct`;
+        });
+    </script>
+</body>
+</html>

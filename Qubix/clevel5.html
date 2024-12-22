@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clevel123.css">
+    <script src="clevel5.js" defer></script>
+    <title>Level 5</title>
+</head>
+<body>
+    <header>
+        <h1>CSS Learning - Level 5</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <h2 class="level-title">Level 5 - Advanced CSS Techniques</h2>
+
+    <div class="questions-container">
+        <!-- Question 1 -->
+        <div class="question" data-correct="backdrop-filter">
+            <h2>1. What CSS property is used to apply effects such as blurring or color shifting to the area behind an element?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="filter"> filter</label>
+                <label><input type="radio" name="q1" value="backdrop-filter"> backdrop-filter</label>
+                <label><input type="radio" name="q1" value="opacity"> opacity</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This property is often used to create a frosted glass effect in modern web design.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question" data-correct="container-query">
+            <h2>2. What CSS concept allows you to apply styles based on the size of a container rather than the viewport?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This emerging CSS feature is useful for component-based design systems.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question" data-correct="subgrid">
+            <h2>3. What CSS grid feature allows child elements to inherit the grid definition of their parent?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="grid-template"> grid-template</label>
+                <label><input type="radio" name="q3" value="subgrid"> subgrid</label>
+                <label><input type="radio" name="q3" value="area"> area</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This feature provides advanced layout capabilities by allowing nested grids to align with parent grids.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question" data-correct="aspect-ratio">
+            <h2>4. What CSS property is used to control the ratio between an element's width and height?</h2>
+            <input type="text" class="answer-input" placeholder="Type your answer">
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This property is useful for maintaining consistent proportions across responsive designs.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question" data-correct="will-change">
+            <h2>5. What CSS property is used to optimize performance for expected changes to an element?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="z-index"> z-index</label>
+                <label><input type="radio" name="q5" value="will-change"> will-change</label>
+                <label><input type="radio" name="q5" value="perspective"> perspective</label>
+            </div>
+            <div class="tip-icon">!</div>
+            <div class="tip-box">
+                This property informs the browser of changes to improve rendering performance.
+            </div>
+            <button class="check-btn">Check Answer</button>
+            <div class="feedback"></div>
+        </div>
+
+   <div id="next-level-section" style="display: none; margin-top: 30px; text-align: center;">
+        <button id="next-level-btn" style="padding: 15px 30px; font-size: 1.2em; margin-bottom: 50px;">Go to Level 6</button>
+    </div>
+</body>
+</html>

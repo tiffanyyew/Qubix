@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Challenge</title>
+    <link rel="stylesheet" href="challenge.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <button class="back-btn" onclick="location.href='index.html'">← Back</button>
+                <button class="login-btn" onclick="location.href='sign.html'">Login</button>
+            </div>
+            <h1>Monthly Challenge</h1>
+            <p>Join the challenge, earn points, and win amazing rewards!</p>
+        </header>
+
+        <section class="challenge-details">
+            <h2>This Month's Challenge</h2>
+            <p>Complete the following tasks to earn points:</p>
+            <ul>
+                <li>Complete recycling sorting task</li>
+                <li>Upload a recyclable item image</li>
+                <li>Share the event on social media</li>
+            </ul>
+            <button id="startChallengeBtn">Start Challenge</button>
+        </section>
+
+        <section class="reward-system">
+            <h2>Rewards System</h2>
+            <p>Earn points and rewards for completing the challenge:</p>
+            <ul>
+                <li>Leaderboard ranking</li>
+                <li>Exclusive virtual prizes</li>
+                <li>Lottery entry</li>
+            </ul>
+            <h3>Points for Rankings</h3>
+            <ul>
+                <li>1st Place: 100 points</li>
+                <li>2nd Place: 80 points</li>
+                <li>3rd Place: 60 points</li>
+                <li>4th-10th Place: 30 points</li>
+                <li>11th-20th Place: 10 points</li>
+            </ul>
+        </section>
+
+        <section class="leaderboard">
+            <h2>Leaderboard</h2>
+            <table id="leaderboardTable">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>User</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Leaderboard data will be dynamically filled in JS -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="time">
+            <h2>Challenge Countdown</h2>
+            <p id="timer"></p>
+        </section>
+    </div>
+
+    <script src="challenge.js"></script>
+</body>
+</html>

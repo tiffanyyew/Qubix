@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="level678.css">
+    <script src="level6.js" defer></script>
+    <title>Level 6</title>
+</head>
+<body>
+    <header>
+        <h1>Python Learning - Level 6</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <main class="content-container">
+        <h2 class="level-title">Level 6 - Functions and Loops</h2>
+
+        <div class="questions-container">
+            <!-- Question 1 -->
+            <div class="question" data-correct="def greet(name): return f'Hello, {name}'">
+                <h2>1. Write a function that takes a name and returns a greeting.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `def` to define the function and `return` for output.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">def greet(name): return f'Hello, {name}'</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question" data-correct="for i in range(5): print(i)">
+                <h2>2. Write a loop to print numbers from 0 to 4.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use a `for` loop with `range()`.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">for i in range(5): print(i)</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question" data-correct="def add(a, b): return a + b">
+                <h2>3. Write a function to add two numbers and return the result.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use two parameters and a `return` statement.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">def add(a, b): return a + b</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question" data-correct="while x < 5: x += 1">
+                <h2>4. Write a `while` loop to increment a variable `x` until it is 5.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use a condition to keep looping until `x` reaches 5.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">while x < 5: x += 1</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question" data-correct="if n % 2 == 0: print('Even') else: print('Odd')">
+                <h2>5. Write an if-else statement to check if a number is even or odd.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use the modulus operator `%` to check divisibility by 2.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">if n % 2 == 0: print('Even') else: print('Odd')</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </div>
+
+        <div id="next-level-section">
+            <button id="next-level-btn">Go to Level 7</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubix - Coding Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 代码雨背景 -->
+    <canvas id="matrix"></canvas>
+
+    <!-- 页面标题部分 -->
+    <div class="terminal-header">
+        <h1>WELCOME TO <span class="highlight">QUBIX</span></h1>
+        <p class="sub-text">Learn | Code | Challenge</p>
+    </div>
+
+    <!-- Game Pin 输入部分 -->
+    <div class="game-pin-section">
+        <h2>Enter Your Game Pin</h2>
+        <input type="text" id="gamePinInput" placeholder="Enter 6-digit PIN" class="game-pin-input">
+        <button class="game-pin-btn" onclick="joinGame()">Join Game</button>
+        <button class="btn-create-btn" onclick="window.location.href='quiz_creation.html'">Create Your Game</button>
+        <p id="pin-error-message" style="color: red; display: none;">Invalid PIN. Please try again.</p>
+    </div>
+
+    <!-- 动画选项卡 -->
+    <div class="options-container">
+        <div class="option-card">
+            <a href="study.html" class="option-link">
+                <h2 class="option-title">Study Mode</h2>
+                <p class="option-desc">Interactive coding lessons to improve your skills.</p>
+            </a>
+        </div>
+        <div class="option-card">
+            <a href="sign.html" class="option-link">
+                <h2 class="option-title">Challenge Mode</h2>
+                <p class="option-desc">Competitive coding challenges to test your limits.</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="gamepin.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>

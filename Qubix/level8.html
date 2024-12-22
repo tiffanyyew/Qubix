@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="level678.css">
+    <script src="level8.js" defer></script>
+    <title>Level 8</title>
+</head>
+<body>
+    <header>
+        <h1>Python Learning - Level 8</h1>
+    </header>
+    <button id="back-btn" class="back-btn">Back</button>
+    <main class="content-container">
+        <h2 class="level-title">Level 8 - File I/O and Error Handling</h2>
+
+        <div class="questions-container">
+            <!-- Question 1 -->
+            <div class="question" data-correct="with open('file.txt', 'w') as f: f.write('Hello, World!')">
+                <h2>1. Write code to create a file 'file.txt' and write 'Hello, World!' in it.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `open()` with `'w'` mode to write to a file.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">with open('file.txt', 'w') as f: f.write('Hello, World!')</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question" data-correct="try: x = 1 / 0 except ZeroDivisionError: print('Error!')">
+                <h2>2. Write code that handles a division by zero error.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `try` and `except` to handle exceptions.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">try: x = 1 / 0 except ZeroDivisionError: print('Error!')</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question" data-correct="with open('file.txt', 'r') as f: print(f.read())">
+                <h2>3. Write code to read the content of 'file.txt'.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `open()` with `'r'` mode to read a file.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">with open('file.txt', 'r') as f: print(f.read())</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question" data-correct="finally: print('This runs no matter what')">
+                <h2>4. Write a `finally` block to print a message.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `finally` to execute code after a `try-except` block.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">finally: print('This runs no matter what')</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question" data-correct="with open('file.txt', 'a') as f: f.write('Goodbye!')">
+                <h2>5. Write code to append 'Goodbye!' to 'file.txt'.</h2>
+                <input type="text" class="answer-input" placeholder="Type your code here">
+                <div class="tip-icon-container">
+                    <div class="tip-icon">!</div>
+                </div>
+                <div class="tip-box">
+                    Hint: Use `'a'` mode to append to a file.
+                </div>
+                <div class="answer-box" title="Hover to see the answer">
+                    <span class="answer-hint">Hover for answer</span>
+                    <div class="hidden-answer">with open('file.txt', 'a') as f: f.write('Goodbye!')</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+        </div>
+
+        <div id="next-level-section">
+            <button id="next-level-btn">Finish</button>
+        </div>
+    </main>
+</body>
+</html>
